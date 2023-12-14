@@ -6,14 +6,18 @@ pipeline{
 
         stage("compile"){
 
-            javac Main.java
+            steps{
+                javac Main.java
+            }
         }
 
         stage("run"){
 
-            java Main
+            steps{
+                java Main
+            }
 
         }
     }
-    
+
 }
